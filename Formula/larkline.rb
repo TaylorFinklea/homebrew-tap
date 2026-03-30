@@ -1,33 +1,37 @@
 # Homebrew formula for larkline.
 #
-# This file is maintained in the main repo for version control.
-# Copy it to the tap repo (github.com/TaylorFinklea/homebrew-tap) at Formula/larkline.rb.
-#
 # Install: brew install TaylorFinklea/tap/larkline
 # Binary name: lark
+# After install: lark plugin sync
 class Larkline < Formula
   desc "The line to all your tools — a keyboard-driven terminal command palette"
   homepage "https://github.com/TaylorFinklea/larkline"
-  version "0.3.0"
+  version "0.3.1"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/TaylorFinklea/larkline/releases/download/v#{version}/lark-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "8e4ae52f4ecb5b96314e5a077d3be55fcaaca80830e00b34243321e793e730a6"
+      sha256 "1b6c1c275e33bb3c722422757232cefad5fc98d6281ada735f8d40b640ebc3f0"
     else
       url "https://github.com/TaylorFinklea/larkline/releases/download/v#{version}/lark-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0d4ff0423ce712b69bc49a10e20ea4383b14faced246bbbbbaa01b7c09c3762c"
+      sha256 "be538f6d272863accb7c666e25ab182c01537ee12d59d41a38c5ff93a4998c01"
     end
   end
 
   on_linux do
     url "https://github.com/TaylorFinklea/larkline/releases/download/v#{version}/lark-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "b5f7b17c530dd606dd8708ac3d52a585554fd3e11f4cb9b5d798d445795b6e3b"
+    sha256 "43992770965621fab1a3e4ccd44db5fece5ca20ae7980960aa5c58ccc4404906"
   end
 
   def install
     bin.install "lark"
+  end
+
+  def caveats
+    <<~EOS
+      Run `lark plugin sync` to install the standard plugin library.
+    EOS
   end
 
   test do
