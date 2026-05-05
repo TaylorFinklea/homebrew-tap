@@ -1,6 +1,6 @@
 cask "spotlight-caffeinate" do
   version "1.0.0"
-  sha256 "b63a49cac7c9894d5a0850e21fb280ca5d00d32fc1e049623ae5d565328a3371"
+  sha256 "bfc53f3f10e4032a0f1d7d5ee0ade76bc4609715675cadacac5523379e747937"
 
   url "https://github.com/TaylorFinklea/spotlight-caffeinate/releases/download/v#{version}/SpotlightCaffeinate.zip"
   name "Spotlight Caffeinate"
