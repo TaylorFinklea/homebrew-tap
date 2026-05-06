@@ -1,8 +1,8 @@
 class SpotlightCaffeinateCli < Formula
   desc "Terminal interface for Spotlight Caffeinate"
   homepage "https://github.com/TaylorFinklea/spotlight-caffeinate"
-  url "https://github.com/TaylorFinklea/spotlight-caffeinate/releases/download/v1.0.0/spotlight-caffeinate-cli.tar.gz"
-  sha256 "607862a85557edbdba42ff589d205b95337fcbf0df66436c4889b7452fe1e166"
+  url "https://github.com/TaylorFinklea/spotlight-caffeinate/releases/download/v1.0.1/spotlight-caffeinate-cli.tar.gz"
+  sha256 "685704390e10289d7946c4601f7204231e20e15bde79aa0a1d69058f0665171a"
   license "GPL-3.0-only"
 
   depends_on :macos
