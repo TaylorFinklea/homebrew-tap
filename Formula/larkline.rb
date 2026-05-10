@@ -6,22 +6,22 @@
 class Larkline < Formula
   desc "The line to all your tools — a keyboard-driven terminal command palette"
   homepage "https://github.com/TaylorFinklea/larkline"
-  version "0.12.0"
+  version "0.14.0"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/TaylorFinklea/larkline/releases/download/v#{version}/lark-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "67c2af0da23c030f61e0158a8ea0a4bc4d31517fa89342230715eb6fbe29dbe9"
+      sha256 "966de9268daeb1844f756daaeb4d6048f0031815ad0643d3adbabf9bf55f8ef6"
     else
       url "https://github.com/TaylorFinklea/larkline/releases/download/v#{version}/lark-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "2d153c9bfef21b17e457019d7352a0b59d337f5c06beb350450349710ede8f8c"
+      sha256 "a159aa2cce8a82ad1d0639dc8c9b15e148c3ca9ff0eabb7afe92d1b25177afef"
     end
   end
 
   on_linux do
     url "https://github.com/TaylorFinklea/larkline/releases/download/v#{version}/lark-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "16082ccdcce80dc92b43c6b586ee3838d5f70004202b4c5155c5fbd8ef6aeb38"
+    sha256 "b034d3e2baf0473fae66c34e681faca963e1fecd0456dcab5e27b4ec60c2dac1"
   end
 
   def install
