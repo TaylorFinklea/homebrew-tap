@@ -1,6 +1,6 @@
 cask "layerkeys" do
-  version "0.2.0"
-  sha256 "8665e5595c2dde2a981adb7790346af96e2e12380db3f60a9e4c07046489d7cc"
+  version "0.2.1"
+  sha256 "50b3f9624c5023be2184f7d7be76cac0036811a5136da798b0ddab254665c3ff"
 
   url "https://github.com/TaylorFinklea/layerkeys/releases/download/v#{version}/LayerKeys.zip"
   name "LayerKeys"
