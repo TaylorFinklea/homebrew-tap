@@ -5,13 +5,13 @@
 class HarnessDeck < Formula
   desc "Unified dashboard for AI coding work across harnesses and projects"
   homepage "https://github.com/TaylorFinklea/harness-deck"
-  version "0.1.12"
+  version "0.1.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.12/harness-deck_0.1.12_darwin_amd64.tar.gz"
-      sha256 "936985a96bd424acf62cedddba0ffdaf2b9ef61075153c70a91fe5c59f23496a"
+      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.13/harness-deck_0.1.13_darwin_amd64.tar.gz"
+      sha256 "005b05bc1161cd452ecaff24d0cba30dc4989f3a5fc46548d38c7fd397b22793"
 
       define_method(:install) do
         bin.install "harness-deck"
@@ -19,8 +19,8 @@ class HarnessDeck < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.12/harness-deck_0.1.12_darwin_arm64.tar.gz"
-      sha256 "f04cc87e601d1af27a8d1a2f59a59f6b0690d20120c06d50cc808bef8485ac13"
+      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.13/harness-deck_0.1.13_darwin_arm64.tar.gz"
+      sha256 "da98c477e342be8a5e301052a162491e1f805ec6fc72bb17d6f4eca284970a6a"
 
       define_method(:install) do
         bin.install "harness-deck"
@@ -31,16 +31,16 @@ class HarnessDeck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.12/harness-deck_0.1.12_linux_amd64.tar.gz"
-      sha256 "7db0f541cf45d307fd338606ec54cf9fb6a33aa65643dd3562a60a573bcb94d2"
+      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.13/harness-deck_0.1.13_linux_amd64.tar.gz"
+      sha256 "ed80fe3f45139e8a710f97df91249e36267553d28fc5430e1478b1b9d18e6565"
       define_method(:install) do
         bin.install "harness-deck"
         bin.install_symlink "harness-deck" => "hdeck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.12/harness-deck_0.1.12_linux_arm64.tar.gz"
-      sha256 "5ad0af3990eedbae3cb7d32da7a9f0168ef92bf126009737575f972f0890584e"
+      url "https://github.com/TaylorFinklea/harness-deck/releases/download/v0.1.13/harness-deck_0.1.13_linux_arm64.tar.gz"
+      sha256 "44d86750e0a7c26b3d2c00ca879553f08d0522d3766f11fd3138a102ceff13ea"
       define_method(:install) do
         bin.install "harness-deck"
         bin.install_symlink "harness-deck" => "hdeck"
