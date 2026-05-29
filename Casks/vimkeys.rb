@@ -1,6 +1,6 @@
 cask "vimkeys" do
-  version "0.7.11"
-  sha256 "62e2aecd39c348a80207151a9cebc88cd666514f0962a1e7fcc4df5a9d9a78b9"
+  version "0.7.13"
+  sha256 "f9deb228acf652c8eaf8de6472964c46c863d71684fbae3d675ab15a34dce61c"
 
   url "https://github.com/TaylorFinklea/vimkeys/releases/download/v#{version}/VimKeys.zip"
   name "VimKeys"
